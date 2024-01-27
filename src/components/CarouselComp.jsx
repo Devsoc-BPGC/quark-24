@@ -69,17 +69,17 @@ export default function CarouselComp() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <div className="mt-4 flex items-center justify-center">
-          <CarouselPrevious />
-          <CarouselNext />
+        <div className="mt-4 flex items-center flex-col justify-center">
+          {/* <CarouselPrevious /> */}
+          {/* <CarouselNext /> */}
         </div>
       </Carousel>
 
-      {hoveredIndex !== null && (
+      {/* {hoveredIndex !== null && (
         <div className="flex items-center text-6xl justify-center bg-gray-800 text-white mt-4">
           Hover detected on slide {hoveredIndex}
         </div>
-      )}
+      )} */}
     </div>
   );
 }
