@@ -10,6 +10,8 @@ function HomePage() {
         style={{
           backgroundImage: `url(${landing_gif})`,
           backgroundRepeat: "no-repeat",
+          marginLeft: 'auto',
+          marginRight: 'auto',
         }}
       >
         <TopBar />
