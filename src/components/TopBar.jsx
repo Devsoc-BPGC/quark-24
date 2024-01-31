@@ -5,19 +5,25 @@ function TopBar() {
   return (
     <>
       <div className="flex relative flex-row space-evenly gap-6 w-[100vw] h-[10vh] mt-4 justify-evenly">
-        <Link to="/events"> <span className="font-roboInvaders pt-2 text-white inline-block group transition cursor-pointer duration-300 ease-out">
-          <span className="group-hover:bg-purple-500 px-2 py-1">EVENTS</span>
+      <Link to="/events"> <span className="font-roboInvaders pt-2 text-white  inline-block group transition cursor-pointer duration-300 ease-out">
+          <span className="group-hover:bg-[#4d00a2] rounded-full px-2 py-1">
+            Events
+          </span> 
         </span> </Link>
         <Link to="/workshops"> <span className="font-roboInvaders pt-2 text-white inline-block group transition cursor-pointer duration-300 ease-in-out">
-          <span className="group-hover:bg-purple-500 px-2 py-1">WORKSHOPS</span>
+          <span className="group-hover:bg-[#4d00a2] rounded-full px-2 py-1">
+           WORKSHOPS
+          </span> 
         </span> </Link>
         <Link to="/exhibitions">  <span className="font-roboInvaders  pt-2 text-white inline-block group transition cursor-pointer duration-300 ease-in-out">
-          <span className="group-hover:bg-purple-500 px-2 py-1">
-            EXHIBITIONS
+          <span className="group-hover:bg-[#4d00a2] rounded-full px-2 py-1">
+            EXHIBITIONS 
           </span>
         </span> </Link>
-        <Link to="/nights"> <span className="font-roboInvaders pt-2 text-white inline-block group transition cursor-pointer duration-300 ease-in-out">
-          <span className="group-hover:bg-purple-500 px-2 py-1">NIGHTS</span>
+        <Link to="nights"> <span className="font-roboInvaders pt-2 text-white inline-block group transition cursor-pointer duration-300 ease-in-out">
+          <span className="group-hover:bg-[#4d00a2] rounded-full px-2 py-1">
+            NIGHTS
+          </span> 
         </span> </Link>
         <Link to="/">
           <img
@@ -27,18 +33,24 @@ function TopBar() {
           />
         </Link>
         <Link to="/GuestLectures">  <span className="font-roboInvaders pt-2 text-white inline-block group transition cursor-pointer duration-300 ease-in-out">
-          <span className="group-hover:bg-purple-500 px-2 py-1">
-            GUEST LECTURES 
+          <span className="group-hover:bg-[#4d00a2] rounded-full px-2 py-1">
+            GUEST LECTURES
+          </span>
+        </span>  </Link>
+        <Link to="/workshops"> <span className="font-roboInvaders pt-2 text-white inline-block group transition cursor-pointer duration-300 ease-in-out">
+          <span className="group-hover:bg-[#4d00a2] rounded-full px-2 py-1">
+            WORKSHOPS
           </span>
         </span> </Link>
-        <Link to="/workshops"> <span className="font-roboInvaders pt-2 text-white inline-block group transition cursor-pointer duration-300 ease-in-out">
-          <span className="group-hover:bg-purple-500 px-2 py-1"> WORKSHOPS </span>
-        </span> </Link>
         <Link to="/sponsors"> <span className="font-roboInvaders pt-2 text-white inline-block group transition cursor-pointer duration-300 ease-in-out">
-          <span className="group-hover:bg-purple-500 px-2 py-1">SPONSORS</span>
+          <span className="group-hover:bg-[#4d00a2] rounded-full px-2 py-1">
+           SPONSORS
+          </span>
         </span> </Link>
         <Link to="/team"> <span className="font-roboInvaders pt-2 text-white inline-block group transition cursor-pointer duration-700 ease-in">
-          <span className="group-hover:bg-purple-500 px-2 py-1">OUR TEAM </span>
+          <span className="group-hover:bg-[#4d00a2] rounded-full px-2 py-1">
+           OUR TEAM 
+          </span>
         </span> </Link>
         <Outlet />
       </div>
