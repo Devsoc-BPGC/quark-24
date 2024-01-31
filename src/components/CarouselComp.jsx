@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, HoverText } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -8,14 +8,13 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import "./carouselComp.css";
+import { CardForEvents } from "./ui/CardEvents";
 
-// Import all your images
 import one from "../assets/carousel/one.jpeg";
 import two from "../assets/carousel/two.jpeg";
 import three from "../assets/carousel/three.jpeg";
 import four from "../assets/carousel/four.jpeg";
 import five from "../assets/carousel/five.jpeg";
-// Add more imports as needed
 
 export default function CarouselComp() {
   const [api, setApi] = React.useState();
@@ -44,50 +43,81 @@ export default function CarouselComp() {
     setHoveredIndex(null);
   };
 
-  // Array of images
-  const images = [one, two, three, four, five]; // Add more images as needed
+  const images = [
+    {
+      src: one,
+      dsc: "Get ready to put your engineering skills to the test at Time Challenge.",
+      title: "TIME CHALLENGE",
+    },
+    {
+      src: two,
+      dsc: "Get ready to put your engineering skills to the test at Time Challenge.",
+      title: "ROBOWARS",
+    },
+    {
+      src: three,
+      dsc: "Get ready to put your engineering skills to the test at Time Challenge.",
+      title: "VALORANT",
+    },
+    {
+      src: four,
+      dsc: "Get ready to put your engineering skills to the test at Time Challenge.",
+      title: "PRODUCT MANAGEMENT",
+    },
+    {
+      src: five,
+      dsc: "Get ready to put your engineering skills to the test at Time Challenge.",
+      title: "UI/UX WORKSHOP",
+    },
+  ];
 
   return (
-    <div className="w-[85vw] h-auto flex flex-col mx-auto">
+    <div className="w-full h-auto flex flex-col mx-auto">
       <Carousel
         setApi={setApi}
         opts={{
           align: "center",
           loop: true,
         }}
-        className="w-full max-w- flex flex-col justify-center"
+        className="w-full max-w- flex mb-[40rem] flex-col justify-center"
       >
         <CarouselContent>
           {images.map((image, index) => (
             <CarouselItem
               key={index}
-              className={`md:basis-1 lg:basis-1/3 ${
+              className={`md:basis-[90%] lg:basis-[42%] ${
                 hoveredIndex === index ? "" : ""
               }`}
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={handleMouseLeave}
             >
               <div
-                className={`p-1 ${index === current ? "" : "p-8"} 
+                className={`p-1 ${index === current ? "" : "p-12"} 
                 } `}
               >
                 <Card className={``}>
-                  <CardContent className="flex  items-center justify-center p-6">
+                  <CardContent className="flex  items-center justify-center p-4">
                     <img
-                      src={image}
+                      src={image.src}
                       alt={`Image ${index + 1}`}
-                      className="aspect-[1/1] bg-cover "
+                      className="aspect-[1.4/1] object-cover "
+                    />
+                    <HoverText
+                      description={image.dsc}
+                      title={image.title}
+                      className="font-Azonix"
                     />
                   </CardContent>
                 </Card>
+                {/* <CardForEvents imageSrc={image} description="hey" title="tit" /> */}
               </div>
             </CarouselItem>
           ))}
         </CarouselContent>
-        <div className="mt-4 flex items-center flex-col justify-center">
-          <CarouselPrevious />
-          <CarouselNext />
-        </div>
+        {/* <div className="mt-4 flex items-center flex-col justify-center">/ */}
+        {/* <CarouselPrevious />
+        <CarouselNext /> */}
+        {/* </div> */}
       </Carousel>
 
       {/* {hoveredIndex !== null && (
