@@ -3,7 +3,7 @@ import CarouselComp from "../components/CarouselComp";
 
 export default function About() {
   return (
-    <div className="w-[100vw] h-auto  relative">
+    <div className="w-[100vw]   relative">
       <div
         className="absolute inset-0 "
         style={{
@@ -13,12 +13,13 @@ export default function About() {
           filter: "brightness(30%)",
         }}
       />
-      <div className="pt-[10vh]">
+      <div className="absolute  mb-10 top-0 left-0 w-full h-[20vh] bg-gradient-to-b from-black to-transparent" />
+      <div className="pt-[35vh]">
         <div className="flex lg:flex-row relative flex-col  z-10">
           <div className="lg:w-[50vw] flex flex-col justify-center self-center">
             <div
               style={{}}
-              className="font-roboInvaders text-white text-8xl self-center tracking-wide"
+              className="font-roboInvaders text-white  text-8xl self-center tracking-wide"
             >
               ABOUT <br /> QUARK
             </div>
