@@ -1,14 +1,17 @@
-import sponsors from "../assets/sponsors.png";
+import sponsors from "../assets/images/sponsors.png";
 import TopBar from "../components/TopBar";
-import sponsors_logo from "../assets/sponsors_logo.png";
+import sponsors_logo from "../assets/images/sponsors_logo.png";
 
 function Sponsors() {
     return (
         <>
             <div
-                className="h-full min-h-screen relative bg-cover flex flex-col items-center"
+                className="h-full min-h-screen relative bg-cover  flex flex-col items-center"
                 style={{
                     backgroundImage: `url(${sponsors})`,
+                    backgroundRepeat: "no-repeat",
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
                 }}
             >
                 <TopBar />

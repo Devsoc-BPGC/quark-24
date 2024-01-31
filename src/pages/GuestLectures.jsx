@@ -1,6 +1,6 @@
-import guestLectures from "../assets/GuestLecture.png";
+import guestLectures from "../assets/images/GuestLecture.png";
 import TopBar from "../components/TopBar";
-import guest_logo from "../assets/guest_logo.png";
+import guest_logo from "../assets/images/guest_logo.png";
 
 function GuestLectures() {
     return (
@@ -9,6 +9,9 @@ function GuestLectures() {
                 className="h-full min-h-screen relative bg-cover flex flex-col items-center"
                 style={{
                     backgroundImage: `url(${guestLectures})`,
+                    backgroundRepeat: "no-repeat",
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
                 }}
             >
                 <TopBar />

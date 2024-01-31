@@ -1,6 +1,6 @@
-import team from "../assets/team.png";
+import team from "../assets/images/team.png";
 import TopBar from "../components/TopBar";
-import team_logo from "../assets/team_logo.png";
+import team_logo from "../assets/images/team_logo.png";
 
 function Team() {
     return (
@@ -9,6 +9,9 @@ function Team() {
                 className="h-full min-h-screen relative bg-cover flex flex-col items-center"
                 style={{
                     backgroundImage: `url(${team})`,
+                    backgroundRepeat: "no-repeat",
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
                 }}
             >
                 <TopBar />

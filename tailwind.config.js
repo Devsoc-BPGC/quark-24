@@ -20,6 +20,7 @@ module.exports = {
       fontFamily: {
         roboInvaders: ["roboInvaders"],
         nicoMoji: ["nicoMoji"],
+        azonix: ["Azonix"],
       },
       colors: {
         border: "hsl(var(--border))",

@@ -1,4 +1,4 @@
-import bg_about from "../assets/bg_about.gif";
+import bg_about from "../assets/images/bg_about.gif";
 import CarouselComp from "../components/CarouselComp";
 
 export default function About() {

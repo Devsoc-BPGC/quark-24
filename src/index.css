@@ -2,12 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+.body,html {
+  height:100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 @font-face {
   font-family: "roboInvaders";
-  src: url("./fonts/Robot-Invaders.ttf");
+  src: url("./assets/fonts/Robot-Invaders.ttf");
 }
 
 @font-face {
   font-family: "nicoMoji";
-  src: url("./fonts/NicoMoji-Regular.ttf");
+  src: url("./assets/fonts/NicoMoji-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Azonix';
+  src: url('./assets/fonts/Azonix.otf');
 }

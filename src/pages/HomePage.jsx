@@ -1,6 +1,6 @@
-import landing_gif from "../assets/landing_gif.gif";
+import landing_gif from "../assets/images/landing_gif.gif";
 import TopBar from "../components/TopBar";
-import logo_quark from "../assets/logo_quark.png";
+import logo_quark from "../assets/images/logo_quark.png";
 
 function HomePage() {
   return (

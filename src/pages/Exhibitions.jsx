@@ -1,14 +1,17 @@
-import exhibitions from "../assets/exhibition.png";
+import exhibitions from "../assets/images/exhibition.png";
 import TopBar from "../components/TopBar";
-import exhibitions_logo from "../assets/exhibitions_logo.png";
+import exhibitions_logo from "../assets/images/exhibitions_logo.png";
 
 function Exhibhition() {
     return (
         <>
             <div
-                className="h-full min-h-screen relative bg-cover flex flex-col items-center"
+                className="h-full min-h-screen relative bg-cover  flex flex-col items-center"
                 style={{
                     backgroundImage: `url(${exhibitions})`,
+                    backgroundRepeat: "no-repeat",
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
                 }}
             >
                 <TopBar />

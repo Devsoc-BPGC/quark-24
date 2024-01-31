@@ -1,6 +1,6 @@
-import nights from "../assets/nights.png";
+import nights from "../assets/images/nights.png";
 import TopBar from "../components/TopBar";
-import night_logo from "../assets/nights_logo.png";
+import night_logo from "../assets/images/nights_logo.png";
 
 function Nights() {
     return (
@@ -9,6 +9,9 @@ function Nights() {
                 className="h-full min-h-screen relative bg-cover flex flex-col items-center"
                 style={{
                     backgroundImage: `url(${nights})`,
+                    backgroundRepeat: "no-repeat",
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
                 }}
             >
                 <TopBar />
