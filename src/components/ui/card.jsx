@@ -77,7 +77,7 @@ const HoverText = ({ title, description, className }) => {
         <span
           className=" ml-10 font-azonix text-lg text-white  hover:bg-[rgba(255,255,255,0.5)] hover:shadow-[0_0_25px_-0px_rgba(255,255,255,1)] rounded-full  font-bold cursor-pointer "
           onClick={() => {
-            window.open("https://register.bitsquark.in", "_blank");
+            navigate("/events");
           }}
         >
           MORE EVENTS
@@ -85,7 +85,7 @@ const HoverText = ({ title, description, className }) => {
         <span
           className="font-azonix mr-12 text-white hover:bg-[rgba(255,255,255,0.5)] hover:shadow-[0_0_25px_-0px_rgba(255,255,255,1)] rounded-full  text-lg font-bold cursor-pointer "
           onClick={() => {
-            navigate("/events");
+            window.open("https://register.bitsquark.in", "_blank");
           }}
         >
           REGISTER
