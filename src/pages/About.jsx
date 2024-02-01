@@ -8,13 +8,14 @@ export default function About() {
         className="absolute inset-0 "
         style={{
           backgroundImage: `url(${bg_about})`,
+          // background: "white",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           filter: "brightness(30%)",
         }}
       />
       <div className="absolute  mb-10 top-0 left-0 w-full h-[20vh] bg-gradient-to-b from-black to-transparent" />
-      <div className="pt-[35vh]">
+      <div className="lg:pt-[35vh] pt-[10vh]">
         <div className="flex lg:flex-row relative flex-col  z-10">
           <div className="lg:w-[50vw] flex flex-col justify-center self-center">
             <div
@@ -34,7 +35,7 @@ export default function About() {
             engineering branches as well as the pure sciences.
           </div>
         </div>
-        <div className="mt-[15vh]">
+        <div className="mt-[15vh] pb-96">
           <CarouselComp />
         </div>
       </div>

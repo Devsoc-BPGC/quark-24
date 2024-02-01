@@ -67,10 +67,10 @@ const HoverText = ({ title, description, className }) => {
         className
       )}
     >
-      <div className="text-4xl font-azonix text-white font-bold z-10 ml-6 mb-3">
+      <div className="text-4xl font-azonix text-white font-bold z-10 ml-8 mb-3">
         {title}
       </div>
-      <p className="text-sm text-white font- font-light z-10 flex mx-6">
+      <p className="text-sm text-white font- font-light z-10 flex mx-8">
         {description}
       </p>
       <div className="mt-3 flex flex-row justify-between w-full  z-10">

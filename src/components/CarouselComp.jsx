@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useCallback } from "react";
 import { Card, CardContent, HoverText } from "@/components/ui/card";
 import {
   Carousel,
@@ -7,8 +8,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import "./carouselComp.css";
-import { CardForEvents } from "./ui/CardEvents";
+import rt from "../assets/images/rt.png";
+import lt from "../assets/images/lt.png";
 
 import one from "../assets/carousel/one.jpeg";
 import two from "../assets/carousel/two.jpeg";
@@ -42,7 +43,13 @@ export default function CarouselComp() {
   const handleMouseLeave = () => {
     setHoveredIndex(null);
   };
+  const scrollPrev = useCallback(() => {
+    if (api) api.scrollPrev();
+  }, [api]);
 
+  const scrollNext = useCallback(() => {
+    if (api) api.scrollNext();
+  }, [api]);
   const images = [
     {
       src: one,
@@ -79,7 +86,7 @@ export default function CarouselComp() {
           align: "center",
           loop: true,
         }}
-        className="w-full max-w- flex mb-[40rem] flex-col justify-center"
+        className="w-full max-w- flex  flex-col justify-center"
       >
         <CarouselContent>
           {images.map((image, index) => (
@@ -109,22 +116,19 @@ export default function CarouselComp() {
                     />
                   </CardContent>
                 </Card>
-                {/* <CardForEvents imageSrc={image} description="hey" title="tit" /> */}
               </div>
             </CarouselItem>
           ))}
         </CarouselContent>
-        {/* <div className="mt-4 flex items-center flex-col justify-center">/ */}
-        {/* <CarouselPrevious />
-        <CarouselNext /> */}
-        {/* </div> */}
       </Carousel>
-
-      {/* {hoveredIndex !== null && (
-        <div className="flex items-center text-6xl justify-center bg-gray-800 text-white mt-4">
-          Hover detected on slide {hoveredIndex}
-        </div>
-      )} */}
+      <div className="flex justify-center  z-10  mt-4">
+        <img src={lt} onClick={scrollPrev} className="cursor-pointer"></img>
+        <img
+          src={rt}
+          onClick={scrollNext}
+          className="ml-8 cursor-pointer"
+        ></img>
+      </div>
     </div>
   );
 }
