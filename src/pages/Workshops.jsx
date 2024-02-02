@@ -1,10 +1,18 @@
 import workshops from "../assets/images/workshop.png";
 import TopBar from "../components/TopBar";
 import workshops_logo from "../assets/images/workshops_logo.png";
+import events_bg from "../assets/images/events_bg.jpg";
+import { CardForEvents } from "../components/ui/CardEvents";
+import ai from "../assets/images/cards/ai.png"
+import stock from "../assets/images/cards/stock.png"
+import nft from "../assets/images/cards/nft.png"
+import mngment from "../assets/images/cards/mngment.png"
+import ui from "../assets/images/cards/ui.png"
+import dsa from "../assets/images/cards/dsa.png"
 
 function Workshop() {
     return (
-      
+        <>
             <div
                 className="h-full min-h-screen relative bg-cover flex flex-col items-center"
                 style={{
@@ -19,8 +27,27 @@ function Workshop() {
                     <img src={workshops_logo} alt="Workshops logo" />
                 </div>
             </div>
-      
+            <div className="flex-grow flex flex-col justify-center bg-black" 
+               style={{
+                backgroundImage: `url(${events_bg})`,
+                backgroundSize: "cover",
+               }}
+            >
+                <div className= "flex flex-col md:justify-start mt-20 justify-center ml-5 md:ml-20 ">
+                    <div className="flex flex-wrap">
+                        <CardForEvents title="AI For AI BY IBM"  imageSrc = {ai} description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?" />
+                        <CardForEvents title="STOCK TRADING WITH UPSTOX"  imageSrc = {stock} description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play" />
+                        <CardForEvents title="NFT AND WEB 3.0" imageSrc = {nft}  description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?" />
+                        <CardForEvents title="PRODUCT MANAGMENT 101" imageSrc = {mngment}  description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?" />
+                        <CardForEvents title="UI/UX BY LOLLYPOP DESIGNS"  imageSrc = {ui} description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?" />
+                        <CardForEvents title="DATA STRUCTURES AND ALGORITHMS" imageSrc = {dsa}  description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?" />
+                    </div>
+                </div>
+                </div>
+        </>
     );
 }
 
 export default Workshop;
+
+

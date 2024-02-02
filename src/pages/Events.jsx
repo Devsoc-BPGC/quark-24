@@ -34,16 +34,22 @@ import debate from "../assets/images/cards/debate.png";
 import enigmatica from "../assets/images/cards/enigmatica.png";
 import digilogica from "../assets/images/cards/digilogica.png";
 import ucmania from "../assets/images/cards/ucmania.png";
+import events_bg from "../assets/images/events_bg.jpg";
 import React from 'react';
 
 function Event() {
     return (
         <>
             <div
-                className="flex-grow h-full min-h-screen w-full relative bg-cover  flex flex-col items-center"
+                className="flex-grow h-full min-h-screen relative bg-cover flex flex-col items-center"
                 style={{
-                    backgroundImage: `url(${event})`,
+                    backgroundImage: `url(${event}), url(${transition})`,
+                    backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                    transition: "background-position 1s ease-in-out",
+                    margin: 0,
+                    padding: 0,
                 }}
             >
                 <TopBar />
@@ -51,8 +57,13 @@ function Event() {
                     <img src={events_logo} alt="Events logo" />
                 </div>
             </div>
-            <div className="flex-grow flex flex-col justify-center bg-black " >
-                <div className= "flex flex-col justify-start mt-20 ml-20 mr-1">
+            <div className="flex-grow flex flex-col justify-center bg-black" 
+               style={{
+                backgroundImage: `url(${events_bg})`,
+                backgroundSize: "cover",
+               }}
+            >
+                <div className= "flex flex-col md:justify-start mt-20 justify-center ml-5 md:ml-20 ">
                     <div className="text-white text-5xl font-normal font-roboInvaders ml-5 mb-2">ROBOFICIAL</div>
                     <div className="flex flex-wrap">
                         <CardForEvents title="ROBOWARS" imageSrc={robowar} description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?" />
@@ -63,7 +74,7 @@ function Event() {
                         <CardForEvents title="MAZE RUNNER" imageSrc={maze_runner} description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?" />
                     </div>
                 </div>
-                <div className= "flex flex-col justify-start mt-20 ml-20">
+                <div className= "flex flex-col md:justify-start mt-20 justify-center ml-5 md:ml-20">
                     <div className="text-white text-5xl font-normal font-roboInvaders ml-5 mb-2">CORPORATE</div>
                     <div className="flex flex-wrap">
                         <CardForEvents title="REGALIA" imageSrc={regalia} description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?" />
@@ -72,7 +83,7 @@ function Event() {
                         <CardForEvents title="BULLION BEATDOWN" imageSrc={bullion} description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play" />
                     </div>
                 </div>
-                <div className= "flex flex-col justify-start mt-20 ml-20">
+                <div className= "flex flex-col md:justify-start mt-20 justify-center ml-5 md:ml-20">
                     <div className="text-white text-5xl font-normal font-roboInvaders ml-5 mb-2">PROGAMMERS INC.</div>
                     <div className="flex flex-wrap">
                         <CardForEvents title="CODEJAM" imageSrc={codejam} description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?" />
@@ -82,14 +93,14 @@ function Event() {
                         <CardForEvents title="BITS CTF" imageSrc={CTF} description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?" />
                     </div>
                 </div>
-                <div className= "flex flex-col justify-start mt-20 ml-20">
+                <div className= "flex flex-col md:justify-start mt-20 justify-center ml-5 md:ml-20">
                     <div className="text-white text-5xl font-normal font-roboInvaders ml-5 mb-2">MATKA</div>
                     <div className="flex flex-wrap">
                         <CardForEvents title="Valorant" imageSrc={valorant} description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?" />
                         <CardForEvents title="Fifa" imageSrc={fifa} description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play" />
                     </div>
                 </div>
-                <div className= "flex flex-col justify-start mt-20 ml-20">
+                <div className= "flex flex-col md:justify-start mt-20 justify-center ml-5 md:ml-20">
                     <div className="text-white text-5xl font-normal font-roboInvaders ml-5 mb-2">BLOCKCHAINIFY</div>
                     <div className="flex flex-wrap">
                         <CardForEvents title="DAPP-ATHON" imageSrc={dappthon} description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?" />
@@ -97,7 +108,7 @@ function Event() {
                         <CardForEvents title="anftee" imageSrc={anftee} description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?" />
                     </div>
                 </div>
-                <div className= "flex flex-col justify-start mt-20 ml-20">
+                <div className= "flex md:justify-start mt-20 justify-center ml-5 md:ml-20">
                     <div className="text-white text-5xl font-normal font-roboInvaders ml-5 mb-2">DESIGN AND BUILD</div>
                     <div className="flex flex-wrap">
                         <CardForEvents title="Burnout" imageSrc={burnout} description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?" />
@@ -105,7 +116,7 @@ function Event() {
                         <CardForEvents title="Trailblazers" imageSrc={trailbazers} description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?" />
                     </div>
                 </div>
-                <div className= "flex flex-col justify-start mt-20 ml-20">
+                <div className= "flex md:justify-start mt-20 justify-center ml-5 md:ml-20">
                     <div className="text-white text-5xl font-normal font-roboInvaders ml-5 mb-2">SCHOOL BAG</div>
                     <div className="flex flex-wrap">
                         <CardForEvents title="Quiz" imageSrc={idk} description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?" />
@@ -113,21 +124,21 @@ function Event() {
                         <CardForEvents title="Enigmatica" imageSrc={enigmatica} description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play" />
                     </div>
                 </div>
-                <div className= "flex flex-col justify-start mt-20 ml-20">
+                <div className= "flex flex-col md:justify-start mt-20 justify-center  ml-5 md:ml-20">
                     <div className="text-white text-5xl font-normal font-roboInvaders ml-5 mb-2">ELIXIR</div>
                     <div className="flex flex-wrap">
                         <CardForEvents title="Quark National Quiz" imageSrc={quiz} description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?" />
                         <CardForEvents title="Ganimatoonics" imageSrc={ganimatronics} description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play" />
                     </div>
                 </div>
-                <div className= "flex flex-col justify-start mt-20 ml-20">
+                <div className= "flex flex-col md:justify-start mt-20 justify-center ml-5 md:ml-20">
                     <div className="text-white text-5xl font-normal font-roboInvaders ml-5 mb-2">ELECTRIFY</div>
                     <div className="flex flex-wrap">
                         <CardForEvents title="Digilogica" imageSrc={digilogica} description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?" />
                         <CardForEvents title="μC MANIA" imageSrc={ucmania} description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play" />
                     </div>
                 </div>
-                <div className= "flex flex-col justify-start mt-20 ml-20">
+                <div className= "flex flex-col md:justify-start mt-20 justify-center ml-5 md:ml-20">
                     <div className="text-white text-5xl font-normal font-roboInvaders ml-5 mb-2">CUBIX</div>
                     <div className="flex flex-wrap">
                         <CardForEvents title="Cubix" imageSrc={cubix} description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?" />
