@@ -3,7 +3,7 @@ import CarouselComp from "../components/CarouselComp";
 
 export default function About() {
   return (
-    <div className="w-[100vw]   relative">
+    <div className="w-[100vw] relative">
       <div
         className="absolute inset-0 "
         style={{
