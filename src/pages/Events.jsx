@@ -9,7 +9,7 @@ import roboclench from "../assets/images/cards/roboclench.png";
 import roborace from "../assets/images/cards/roborace.png";
 import robosoccer from "../assets/images/cards/robosoccer.png";
 import robowar from "../assets/images/cards/robowars.png";
-import thechallenge from "../assets/images/cards/the_challenge.png";
+import thechallenge from "../assets/images/cards/The_challenge.png";
 import maze_runner from "../assets/images/cards/maze_runner.png";
 import regalia from "../assets/images/cards/regalia.png";
 import CaseCrackdown from "../assets/images/cards/casecrackdown.png";
