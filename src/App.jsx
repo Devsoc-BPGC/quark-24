@@ -2,7 +2,7 @@ import HomePage from "./pages/HomePage";
 import About from "./pages/About";
 import Events from "./pages/Events";
 import Exhibitions from "./pages/Exhibitions";
-import Nights from "./pages/nights";
+import Nights from "./pages/Nights";
 import Sponsors from "./pages/Sponsors";
 import GuestLectures from "./pages/GuestLectures";
 import Team from "./pages/Team";
