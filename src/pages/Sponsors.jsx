@@ -79,7 +79,7 @@ function Sponsors() {
                   {sponsorItem.title}
                 </div>
                 <Card
-                  className={`h-96 w-96 flex mb-24 justify-center mx-[auto]`}
+                  className={`lg:h-96 lg:w-96 w-[80vw] h-[80vw] flex mb-24 justify-center mx-[auto]`}
                 >
                   <CardContent className="flex  items-center justify-center p-4">
                     <img

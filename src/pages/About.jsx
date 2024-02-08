@@ -45,8 +45,14 @@ export default function About() {
         style={{ color: "white", fontSize: "1rem", backgroundColor: "black" }}
         className="z-20 flex justify-center"
       >
-        Made with ❤️ by{" "}
-        <a href="https://devsoc.club" style={{ color: "#ADD8E6" }}>
+        Made with ❤️ by
+        <a
+          href="https://devsoc.club"
+          target="_blank"
+          style={{ color: "#ADD8E6" }}
+          // className="ml-1"
+        >
+          {"\u00A0"}
           DevSoc
         </a>
       </footer>
