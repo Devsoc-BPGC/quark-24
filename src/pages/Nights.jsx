@@ -2,6 +2,8 @@ import nights from "../assets/images/nights.png";
 import TopBar from "../components/TopBar";
 import night_logo from "../assets/images/nights_logo.png";
 import coming_soon from "../assets/images/coming_soon.png";
+import prog from "../assets/images/prog.jpeg";
+import salim from "../assets/images/salim.jpeg";
 
 function Nights() {
   return (
@@ -22,7 +24,7 @@ function Nights() {
       </div>
       <div
         style={{
-          backgroundImage: `url(${coming_soon})`,
+          backgroundImage: `url(${prog})`,
           backgroundRepeat: "no-repeat",
           display: "flex",
           justifyContent: "center",
@@ -38,7 +40,7 @@ function Nights() {
       </div>
       <div
         style={{
-          backgroundImage: `url(${coming_soon})`,
+          backgroundImage: `url(${salim})`,
           backgroundRepeat: "no-repeat",
           display: "flex",
           justifyContent: "center",
