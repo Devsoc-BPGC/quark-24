@@ -4,6 +4,7 @@ import night_logo from "../assets/images/nights_logo.png";
 import coming_soon from "../assets/images/coming_soon.png";
 import prog from "../assets/images/prog.jpeg";
 import salim from "../assets/images/salim.jpeg";
+import isMobile from "../components/useIsMobile";
 
 function Nights() {
   return (
@@ -30,17 +31,16 @@ function Nights() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          minHeight: "100vh",
+          minHeight: `${isMobile ? "71.4vw" : "100vh"}`,
           backgroundSize: "cover",
         }}
       >
-          <div className="relative">
+        <div className="relative">
           <div className="absolute mb-15 top-0 left-0 w-full h-[20vh] bg-gradient-to-b from-black to-transparent" />
         </div>
         <div className="lg:text-6xl text-4xl z-10 font-azonix text-white">
-         DAY 1
+          DAY 1
         </div>
-        
       </div>
       <div
         style={{
@@ -49,14 +49,13 @@ function Nights() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          minHeight: "100vh",
+          minHeight: `${isMobile ? "66.5vw" : "100vh"}`,
           backgroundSize: "cover",
         }}
       >
         <div className="lg:text-6xl text-4xl z-10 font-azonix text-white">
           DAY 2
         </div>
-        
       </div>
       <div
         style={{
@@ -65,15 +64,14 @@ function Nights() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          minHeight: "100vh",
+          minHeight: `${isMobile ? "71.4vw" : "100vh"}`,
           backgroundSize: "cover",
         }}
       >
-        <div className="lg:text-6xl text-4xl z-10 font-azonix text-white">
-          DAY 3 COMING SOON 
+        <div className="lg:text-6xl text-2xl z-10 font-azonix text-white">
+          DAY 3 COMING SOON
         </div>
       </div>
-      
     </>
   );
 }
