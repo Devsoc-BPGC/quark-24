@@ -32,9 +32,42 @@ function Nights() {
         }}
       >
         <div className="lg:text-6xl text-4xl z-10 font-azonix text-white">
-          COMING SOON
+         DAY 1
+        </div>
+        
+      </div>
+      <div
+        style={{
+          backgroundImage: `url(${coming_soon})`,
+          backgroundRepeat: "no-repeat",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          minHeight: "100vh",
+          backgroundSize: "cover",
+        }}
+      >
+        <div className="lg:text-6xl text-4xl z-10 font-azonix text-white">
+          DAY 2
+        </div>
+        
+      </div>
+      <div
+        style={{
+          backgroundImage: `url(${coming_soon})`,
+          backgroundRepeat: "no-repeat",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          minHeight: "100vh",
+          backgroundSize: "cover",
+        }}
+      >
+        <div className="lg:text-6xl text-4xl z-10 font-azonix text-white">
+          DAY 3 COMING SOON 
         </div>
       </div>
+      
     </>
   );
 }
