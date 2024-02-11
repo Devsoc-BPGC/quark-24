@@ -161,7 +161,7 @@ function TopBar() {
               <DropdownMenuContent className="w-56 mr-2 font-azonix text-white text-right bg-gradient-to-l from-black to-transparent via-gray-800 rounded outline-none border-none ">
                 <DropdownMenuGroup>
                   <DropdownMenuItem className="flex justify-end text-right">
-                    <Link to="/sponsors">Nights</Link>
+                    <Link to="/events">Events</Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem className="flex justify-end text-right">
                     <Link to="/exhibitions">Exhibitions</Link>
