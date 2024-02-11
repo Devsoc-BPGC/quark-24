@@ -1,16 +1,39 @@
-import landing_gif from "../assets/images/landing_gif.gif";
+import { useState, useEffect } from 'react';
 import TopBar from "../components/TopBar";
 import logo_quark from "../assets/images/logo_quark.png";
 import isMobile from "../components/useIsMobile";
+import mainscrn from "../assets/images/mainscrn.jpeg";
+import landing_gif from "../assets/images/landing_gif.gif";
 
 function HomePage() {
+  const [backgroundImage, setBackgroundImage] = useState(mainscrn);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setBackgroundImage(mainscrn);
+      } else {
+        setBackgroundImage(landing_gif);
+      }
+    };
+
+    // Initial call
+    handleResize();
+
+    // Event listener for window resize
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <>
       <div className="h- min-h-screen h-[120vh] relative bg-cover flex flex-col items-center">
         <div
-          className="absolute inset-0 "
+          className="absolute inset-0 home"
           style={{
-            backgroundImage: `url(${landing_gif})`,
+            backgroundImage: `url(${backgroundImage})`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             filter: "brightness(60%)",
