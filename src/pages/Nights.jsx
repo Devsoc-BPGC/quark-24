@@ -22,6 +22,7 @@ function Nights() {
           <img src={night_logo} alt="Nights logo" />
         </div>
       </div>
+      <div className="absolute bottom-0 w-full h-[20vh] bg-gradient-to-t from-black to-transparent" />
       <div
         style={{
           backgroundImage: `url(${prog})`,
@@ -33,6 +34,9 @@ function Nights() {
           backgroundSize: "cover",
         }}
       >
+          <div className="relative">
+          <div className="absolute mb-15 top-0 left-0 w-full h-[20vh] bg-gradient-to-b from-black to-transparent" />
+        </div>
         <div className="lg:text-6xl text-4xl z-10 font-azonix text-white">
          DAY 1
         </div>

@@ -61,14 +61,12 @@ function Sponsors() {
           <img src={sponsors_logo} alt="Sponsors logo" />
         </div>
       </div>
-
-      <div className="absolute   w-full h-[40vh] bg-gradient-to-b from-black to-transparent" />
-
+      <div className="absolute bottom-0 w-full h-[20vh] bg-gradient-to-t from-black to-transparent" />
       <div
         className="flex-grow flex flex-col pt-36 justify-center   bg-black"
         style={{
           backgroundImage: `url(${events_bg})`,
-          backgroundSize: "contain",
+          backgroundSize: "cover",
         }}
       >
         <div className="lg:mx-[auto] justify-center z-10 flex max-w-[100vw] lg:max-w-[50vw] flex-col">

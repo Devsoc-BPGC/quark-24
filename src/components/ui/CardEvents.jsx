@@ -27,11 +27,13 @@ export const CardForEvents = ({ title, description, imageSrc }) => {
           <div className={`absolute bottom-0 left-3 p-4 transform ${isHovered ? '-translate-y-36 opacity-100' : 'translate-y-0 opacity-0'} transition-transform duration-1000 ease-in-out ${isHovered ? 'hover:shadow-lg' : ''}`}>
             <p className={`text-white mt-2 font-medium text-xs`}>{description}</p>
           </div>
+          <a href="https://register.bitsquark.in">
           <div className={`absolute bottom-0 left-3 p-2 transform ${isHovered ? '-translate-y-12 opacity-100' : 'translate-y-0 opacity-0'} transition-transform duration-1000 ease-in-out`}>
             <div className="bg-transparent border border-white transition-colors duration-300 hover:bg-white p-2 hover:text-black text-white">
               <div className="text-xs">Register Now</div>
             </div>
           </div>
+          </a>
         </div>
       </div>
     </div>

@@ -58,6 +58,7 @@ function Event() {
           <img src={events_logo} alt="Events logo" />
         </div>
       </div>
+      <div className="absolute bottom-0 w-full h-[20vh] bg-gradient-to-t from-black to-transparent" />
       <div
         className="flex-grow flex flex-col justify-center bg-black"
         style={{
@@ -65,8 +66,12 @@ function Event() {
           backgroundSize: "cover",
         }}
       >
+        <div className="relative">
+          <div className="absolute mb-15 top-0 left-0 w-full h-[20vh] bg-gradient-to-b from-black to-transparent" />
+        </div>
+
         <div className="flex flex-col md:justify-start mt-20 justify-center ml-5 md:ml-20 ">
-          <div className="text-white text-5xl font-normal font-roboInvaders ml-5 mb-2">
+          <div className="text-white text-5xl font-normal font-roboInvaders ml-5 mb-2 mt-9">
             ROBOFICIAL
           </div>
           <div className="flex flex-wrap">
@@ -176,7 +181,7 @@ function Event() {
               imageSrc={fifa}
               description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play"
             />
-             <CardForEvents
+            <CardForEvents
               title="BGMI"
               imageSrc={bgmi}
               description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play"
@@ -205,7 +210,7 @@ function Event() {
             />
           </div>
         </div>
-        <div className="flex md:justify-start mt-20 justify-center ml-5 md:ml-20">
+        <div className="flex flex-col md:justify-start mt-20 justify-center ml-5 md:ml-20">
           <div className="text-white text-5xl font-normal font-roboInvaders ml-5 mb-2">
             DESIGN AND BUILD
           </div>
@@ -227,7 +232,7 @@ function Event() {
             />
           </div>
         </div>
-        <div className="flex md:justify-start mt-20 justify-center ml-5 md:ml-20">
+        <div className="flex flex-col md:justify-start mt-20 justify-center ml-5 md:ml-20">
           <div className="text-white text-5xl font-normal font-roboInvaders ml-5 mb-2">
             SCHOOL BAG
           </div>
