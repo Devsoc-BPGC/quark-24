@@ -34,6 +34,7 @@ import debate from "../assets/images/cards/debate.png";
 import enigmatica from "../assets/images/cards/enigmatica.png";
 import digilogica from "../assets/images/cards/digilogica.png";
 import ucmania from "../assets/images/cards/ucmania.png";
+import bgmi from "../assets/images/cards/bgmi.jpg";
 import events_bg from "../assets/images/events_bg.jpg";
 import React from "react";
 
@@ -85,7 +86,7 @@ function Event() {
               description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?"
             />
             <CardForEvents
-              title="THE CHALLENGE"
+              title="THE KO TIME"
               imageSrc={thechallenge}
               description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?"
             />
@@ -95,7 +96,7 @@ function Event() {
               description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?"
             />
             <CardForEvents
-              title="MAZE RUNNER"
+              title="ROBOSUMO"
               imageSrc={maze_runner}
               description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?"
             />
@@ -116,11 +117,11 @@ function Event() {
               imageSrc={CaseCrackdown}
               description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play"
             />
-            <CardForEvents
+            {/* <CardForEvents
               title="POLICY MAVERICK"
               imageSrc={policy}
               description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?"
-            />
+            /> */}
             <CardForEvents
               title="BULLION BEATDOWN"
               imageSrc={bullion}
@@ -149,7 +150,7 @@ function Event() {
               description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play"
             />
             <CardForEvents
-              title="CODEWARS"
+              title="Hack ME IF YOU CAN"
               imageSrc={codewars}
               description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play"
             />
@@ -175,15 +176,20 @@ function Event() {
               imageSrc={fifa}
               description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play"
             />
+             <CardForEvents
+              title="BGMI"
+              imageSrc={bgmi}
+              description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play"
+            />
           </div>
         </div>
         <div className="flex flex-col md:justify-start mt-20 justify-center ml-5 md:ml-20">
           <div className="text-white text-5xl font-normal font-roboInvaders ml-5 mb-2">
-            BLOCKCHAINIFY
+            BLOCKCHAIN AND AI/ML
           </div>
           <div className="flex flex-wrap">
             <CardForEvents
-              title="DAPP-ATHON"
+              title="PROMPT ENGINEERING"
               imageSrc={dappthon}
               description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?"
             />
@@ -241,6 +247,11 @@ function Event() {
               imageSrc={enigmatica}
               description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play"
             />
+            <CardForEvents
+              title="Open Showcase"
+              imageSrc={enigmatica}
+              description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play"
+            />
           </div>
         </div>
         <div className="flex flex-col md:justify-start mt-20 justify-center  ml-5 md:ml-20">
@@ -255,6 +266,11 @@ function Event() {
             />
             <CardForEvents
               title="Ganimatoonics"
+              imageSrc={ganimatronics}
+              description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play"
+            />
+            <CardForEvents
+              title="Torque and Trivia"
               imageSrc={ganimatronics}
               description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play"
             />
@@ -278,7 +294,7 @@ function Event() {
           </div>
         </div>
         <div className="flex flex-col md:justify-start mt-20 justify-center ml-5 md:ml-20">
-          <div className="text-white text-5xl font-normal font-roboInvaders ml-5 mb-2">
+          {/* <div className="text-white text-5xl font-normal font-roboInvaders ml-5 mb-2">
             CUBIX
           </div>
           <div className="flex flex-wrap">
@@ -287,7 +303,7 @@ function Event() {
               imageSrc={cubix}
               description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </>
