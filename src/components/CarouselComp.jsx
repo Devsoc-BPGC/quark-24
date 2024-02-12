@@ -68,7 +68,7 @@ export default function CarouselComp() {
     },
     {
       src: four,
-      dsc: "Get ready to put your engineering skills to the test at Time Challenge.",
+      dsc: "Join our Flipkart Product Management Workshop for a deep dive into the intricacies of effective product management.Don't miss this opportunity to refine your expertise and network with industry professionals.",
       title: "PRODUCT MANAGEMENT",
     },
   ];
