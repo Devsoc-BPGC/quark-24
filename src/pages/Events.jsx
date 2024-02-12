@@ -78,32 +78,32 @@ function Event() {
             <CardForEvents
               title="ROBOWARS"
               imageSrc={robowar}
-              description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?"
+              description="Gear up for an adrenaline-pumping spectacle at our techfest's Robowars! Witness custom-built robots battle it out in a fierce arena, showcasing engineering prowess and strategic brilliance"
             />
             <CardForEvents
               title="ROBORACE"
               imageSrc={roborace}
-              description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play"
+              description="Experience the thrill of the race as cutting-edge robots compete for the top spot in a lightning-fast dash to the finish line."
             />
             <CardForEvents
               title="ROBOSOCCER"
               imageSrc={robosoccer}
-              description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?"
+              description="Experience the thrill of the race as cutting-edge robots compete for the top spot in a lightning-fast dash to the finish line."
             />
             <CardForEvents
-              title="THE KO TIME"
+              title="TIME CHALLENGE"
               imageSrc={thechallenge}
-              description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?"
-            />
+              description="Get ready to put your engineering skills to the test at Time Challenge, where you'll build a lightning-fast line follower that can tackle any circuit and race to the finish line in record time."
+              />
             <CardForEvents
               title="ROBOCLENCH"
               imageSrc={roboclench}
-              description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?"
+              description="Get ready to witness the ultimate test of robotic dexterity as machines with claws battle it out to pick up and hold on tight to victory at RoboClench"
             />
             <CardForEvents
               title="ROBOSUMO"
               imageSrc={maze_runner}
-              description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?"
+              description="Prepare for intense clashes and strategic showdowns at our techfest's Robosumo! Watch pint-sized robots engage in fierce sumo-style battles, pushing boundaries and opponents out of the ring with precision and wit."
             />
           </div>
         </div>
@@ -115,12 +115,12 @@ function Event() {
             <CardForEvents
               title="REGALIA"
               imageSrc={regalia}
-              description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?"
+              description="Join us at Regalia to be held during Quark, the biggest techno-management fest of India held at BITS-Pilani, Goa Campus and manifest your dream of having a shark tank like experience."
             />
             <CardForEvents
               title="CASE CRACKDOWN"
               imageSrc={CaseCrackdown}
-              description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play"
+              description="Calling all aspiring strategists and marketers! Join Case Crackdown and take on real-world business challenges."
             />
             {/* <CardForEvents
               title="POLICY MAVERICK"
@@ -130,7 +130,7 @@ function Event() {
             <CardForEvents
               title="BULLION BEATDOWN"
               imageSrc={bullion}
-              description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play"
+              description="Put your trading skills to the test in our intense market competition featuring gold trading and negotiations"
             />
           </div>
         </div>
@@ -142,27 +142,27 @@ function Event() {
             <CardForEvents
               title="CODEJAM"
               imageSrc={codejam}
-              description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?"
+              description="Calling all coding enthusiasts! Compete wth the brightest minds and test your coding skills in our upcoming coding competition!"
             />
             <CardForEvents
               title="FOOLS CODING"
               imageSrc={fools_coding}
-              description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?"
+              description="Be the Bond of programming and figure out what is the hidden source code by looking at its behavior on your inputs."
             />
             <CardForEvents
               title="HACKATHON"
               imageSrc={hackathon}
-              description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play"
+              description="Calling all developers, designers, and tech enthusiasts! Come and showcase your skills at our upcoming hackathon and compete for exciting prizes!"
             />
             <CardForEvents
               title="Hack ME IF YOU CAN"
               imageSrc={codewars}
-              description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play"
+              description="Join our beginner-friendly offline hacking event where you'll navigate a series of challenges on a dedicated target machine. Compete individually to uncover flags and earn scores."
             />
             <CardForEvents
               title="BITS CTF"
               imageSrc={CTF}
-              description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?"
+              description="Are you a hacker, coder, or just passionate about cybersecurity? Compete in our Capture the Flag and see if you have what it takes to come out on top"
             />
           </div>
         </div>
@@ -184,7 +184,7 @@ function Event() {
             <CardForEvents
               title="BGMI"
               imageSrc={bgmi}
-              description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play"
+              description="Gear up for the ultimate battleground in our techfest's BGMI Online Gaming Contest! Dive into the fast-paced world of Battle Grounds Mobile India, where strategic brilliance and lightning reflexes rule."
             />
           </div>
         </div>
@@ -201,12 +201,12 @@ function Event() {
             <CardForEvents
               title="cryptomania"
               imageSrc={cryptomania}
-              description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play"
+              description="Are you a crypto trading pro? Put your skills to the test and compete to win big in our upcoming competition. Join now."
             />
             <CardForEvents
               title="anftee"
               imageSrc={anftee}
-              description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?"
+              description="Unleash your inner artist in a 60-hour digital art marathon,Individual participation, no boundaries, no bounds.Craft unique masterpieces based on themed prompts."
             />
           </div>
         </div>
@@ -218,17 +218,17 @@ function Event() {
             <CardForEvents
               title="Burnout"
               imageSrc={burnout}
-              description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?"
+              description="Get ready to burn rubber and leave the competition in the dust at Burnout, the electrifying robot car racing event!"
             />
             <CardForEvents
               title="Search and Rescue"
               imageSrc={search}
-              description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play"
+              description="Are you ready to put your engineering skills to the test and make a difference in the world? Join us at 'Search and Rescue' and design a drone to deliver critical medical supplies in record time!"
             />
             <CardForEvents
               title="Trailblazers"
               imageSrc={trailbazers}
-              description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?"
+              description="Get ready to soar to new heights and blaze your own trail in the world of aviation - join us for Trailblazers, the thrilling plane-building competition where speed and agility reign supreme!"
             />
           </div>
         </div>
@@ -240,23 +240,22 @@ function Event() {
             <CardForEvents
               title="Quiz"
               imageSrc={idk}
-              description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?"
+              description="Join us on campus to witness the culmination of months of hard work - a group project presentation showcasing innovative ideas and cutting-edge technology"
             />
             <CardForEvents
               title="Debate"
               imageSrc={debate}
-              description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play"
+              description="Join us for the Schoolbag 2023 Debate and showcase your verbal prowess in a battle of wits and rebuttals - the ultimate test of your persuasive skills!"
             />
             <CardForEvents
               title="Enigmatica"
               imageSrc={enigmatica}
-              description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play"
+              description="Join us for Enigmatica - an exciting and challenging exam that requires no prerequisites and puts your mental prowess to the ultimate test!"
             />
             <CardForEvents
               title="Open Showcase"
               imageSrc={enigmatica}
-              description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play"
-            />
+              description="Join us for Open Showcase, an exam like no other, No prerequisites needed, just bring your mental power. Navigate puzzles and challenges with flair, Prove your prowess, rise beyond compare"/>
           </div>
         </div>
         <div className="flex flex-col md:justify-start mt-20 justify-center  ml-5 md:ml-20">
@@ -267,17 +266,17 @@ function Event() {
             <CardForEvents
               title="Quark National Quiz"
               imageSrc={quiz}
-              description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?"
+              description="Are you ready to put your grey matter to the test? Join us at Quark'23 National Quiz and compete against the brightest minds in the nation for a chance to win exciting prizes!"
             />
             <CardForEvents
               title="Ganimatoonics"
               imageSrc={ganimatronics}
-              description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play"
+              description="Get ready to test your knowledge and unravel the secrets of Ganimatoonics with our exciting quiz - an adventure awaits!"
             />
             <CardForEvents
               title="Torque and Trivia"
               imageSrc={ganimatronics}
-              description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play"
+              description="Engage in a battle of engineering knowledge with challenging trivia, testing the gears of your intellect. From calculating torque to navigating mind-bending questions, participants embark on a quest for both mental acuity and mechanical finesse."
             />
           </div>
         </div>
@@ -289,12 +288,12 @@ function Event() {
             <CardForEvents
               title="Digilogica"
               imageSrc={digilogica}
-              description="Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?"
+              description="Do you think that Digital Design is just a boring course , just about gates and logic? Well, you’re in for a huge surprise!"
             />
             <CardForEvents
               title="μC MANIA"
               imageSrc={ucmania}
-              description="Are you ready to take on the world's best and claim victory? The arena is waiting for you, so lace up your boots and let's play"
+              description="This event is very flexible with the microcontrollers the participant wants to use. Test your Arduino skills and race to the top!"
             />
           </div>
         </div>

@@ -2,7 +2,7 @@ import workshops from "../assets/images/workshop.png";
 import TopBar from "../components/TopBar";
 import workshops_logo from "../assets/images/workshops_logo.png";
 import events_bg from "../assets/images/events_bg.jpg";
-import { CardForEvents } from "../components/ui/CardEvents";
+import { CardForEvents } from "../components/ui/CardWorkshops";
 import ai from "../assets/images/cards/ai.png"
 import stock from "../assets/images/cards/stock.png"
 import nft from "../assets/images/cards/nft.png"
