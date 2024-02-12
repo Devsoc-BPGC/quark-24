@@ -53,28 +53,23 @@ export default function CarouselComp() {
   const images = [
     {
       src: one,
-      dsc: "Get ready to put your engineering skills to the test at Time Challenge.",
+      dsc: "Get ready to put your engineering skills to the test at Time Challenge, where you'll build a lightning-fast line follower that can tackle any circuit and race to the finish line in record time.",
       title: "TIME CHALLENGE",
     },
     {
       src: two,
-      dsc: "Get ready to put your engineering skills to the test at Time Challenge.",
+      dsc: "Gear up for an adrenaline-pumping spectacle at our techfest's Robowars! Witness custom-built robots battle it out in a fierce arena, showcasing engineering prowess and strategic brilliance",
       title: "ROBOWARS",
     },
     {
       src: three,
-      dsc: "Get ready to put your engineering skills to the test at Time Challenge.",
+      dsc: "Get your team ready and join the ultimate Valorant tournament. Prove your worth, master your aim, and become the champion. Are you up for the challenge?",
       title: "VALORANT",
     },
     {
       src: four,
       dsc: "Get ready to put your engineering skills to the test at Time Challenge.",
       title: "PRODUCT MANAGEMENT",
-    },
-    {
-      src: five,
-      dsc: "Get ready to put your engineering skills to the test at Time Challenge.",
-      title: "UI/UX WORKSHOP",
     },
   ];
 

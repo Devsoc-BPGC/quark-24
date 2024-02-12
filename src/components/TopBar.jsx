@@ -173,6 +173,9 @@ function TopBar() {
                     <Link to="/team">Our Team</Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem className="flex justify-end text-right">
+                    <Link to="/workshops">Workshops</Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem className="flex justify-end text-right">
                     <Link to="/GuestLectures">Guest Lectures</Link>
                   </DropdownMenuItem>
                 </DropdownMenuGroup>
