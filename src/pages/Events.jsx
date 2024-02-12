@@ -37,6 +37,8 @@ import ucmania from "../assets/images/cards/ucmania.png";
 import bgmi from "../assets/images/cards/bgmi.jpg";
 import events_bg from "../assets/images/events_bg.jpg";
 import React from "react";
+import tq from "../assets/images/cards/tq.jpg";
+import show from "../assets/images/cards/show.jpg";
 
 function Event() {
   return (
@@ -94,7 +96,7 @@ function Event() {
               title="TIME CHALLENGE"
               imageSrc={thechallenge}
               description="Get ready to put your engineering skills to the test at Time Challenge, where you'll build a lightning-fast line follower that can tackle any circuit and race to the finish line in record time."
-              />
+            />
             <CardForEvents
               title="ROBOCLENCH"
               imageSrc={roboclench}
@@ -254,8 +256,9 @@ function Event() {
             />
             <CardForEvents
               title="Open Showcase"
-              imageSrc={enigmatica}
-              description="Join us for Open Showcase, an exam like no other, No prerequisites needed, just bring your mental power. Navigate puzzles and challenges with flair, Prove your prowess, rise beyond compare"/>
+              imageSrc={show}
+              description="Join us for Open Showcase, an exam like no other, No prerequisites needed, just bring your mental power. Navigate puzzles and challenges with flair, Prove your prowess, rise beyond compare"
+            />
           </div>
         </div>
         <div className="flex flex-col md:justify-start mt-20 justify-center  ml-5 md:ml-20">
@@ -275,7 +278,7 @@ function Event() {
             />
             <CardForEvents
               title="Torque and Trivia"
-              imageSrc={ganimatronics}
+              imageSrc={tq}
               description="Engage in a battle of engineering knowledge with challenging trivia, testing the gears of your intellect. From calculating torque to navigating mind-bending questions, participants embark on a quest for both mental acuity and mechanical finesse."
             />
           </div>
