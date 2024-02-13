@@ -96,6 +96,27 @@ const HoverText = ({ title, description, className }) => {
   );
 };
 
+const BottomText = ({ title, description, dept, className }) => {
+  const navigate = useNavigate();
+  return (
+    <div
+      className={cn(
+        "absolute inset-0 flex flex-col  justify-end mb-8  transition-opacity",
+        className
+      )}
+    >
+      <div className="text-2xl font-azonix text-white font-bold z-10 ml-8 mb-3">
+        {title}
+      </div>
+      <p className="text-sm text-white font- font-light z-10 flex mx-8">
+        {description}
+      </p>
+      <div className="text-sm text-white mx-8 z-20 mt-2">{dept}</div>
+      <div className="absolute w-full mb-[-1rem] h-48 bg-gradient-to-t from-black to-transparent z-0" />
+    </div>
+  );
+};
+
 export {
   Card,
   CardHeader,
@@ -104,4 +125,5 @@ export {
   CardDescription,
   CardContent,
   HoverText,
+  BottomText,
 };

@@ -79,11 +79,11 @@ function Sponsors() {
                 <Card
                   className={`lg:h-96 lg:w-96 w-[80vw] h-[80vw] flex mb-24 justify-center mx-[auto]`}
                 >
-                  <CardContent className="flex  items-center justify-center p-4">
+                  <CardContent className="flex object-cover  items-center justify-center">
                     <img
                       src={sponsorItem.src}
                       alt={`Image ${index + 1}`}
-                      className=" object-contain "
+                      className=" object-cover "
                     />
                   </CardContent>
                 </Card>
