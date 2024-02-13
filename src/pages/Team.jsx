@@ -31,13 +31,6 @@ let arr = [
   },
   {
     name: "Pranshul Garg",
-    img: "https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpgs",
-    dsgn: "Chief Coordinator",
-    dpt: "Department of Publicity and Public Relations",
-  },
-
-  {
-    name: "Pranshul Garg",
     img: "",
     dsgn: "Chief Coordinator",
     dpt: "Department of Publicity and Public Relations.",
