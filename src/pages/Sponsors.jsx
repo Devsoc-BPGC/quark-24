@@ -8,6 +8,7 @@ import brain_wonders from "../assets/sponsors/brain_wonders.jpeg";
 import languify from "../assets/sponsors/languify.jpeg";
 import ims_goa from "../assets/sponsors/ims_goa.jpeg";
 import events_bg from "../assets/images/events_bg.jpg";
+import reclaim from "../assets/images/reclaim.jpg";
 
 import { Card, CardContent, HoverText } from "@/components/ui/card";
 
@@ -90,6 +91,24 @@ function Sponsors() {
               </>
             );
           })}
+          <>
+            <div className="font-azonix text-center mb-6 text-white text-2xl">
+              Hackathon Partner
+            </div>
+            <a href="https://link.reclaimprotocol.org/brand" target="_black">
+              <Card
+                className={`lg:h-96 lg:w-96 w-[80vw] h-[80vw] flex mb-24 justify-center mx-[auto]`}
+              >
+                <CardContent className="flex object-cover  items-center justify-center">
+                  <img
+                    src={reclaim}
+                    alt={`Image reclaim}`}
+                    className=" object-cover "
+                  />
+                </CardContent>
+              </Card>
+            </a>
+          </>
         </div>
       </div>
     </>
