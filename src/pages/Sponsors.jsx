@@ -29,7 +29,7 @@ import { Card, CardContent, HoverText } from "@/components/ui/card";
 const sponsor = [
   {
     title: "Magic Moments",
-    link: "",
+    link: "https://www.m2magicmoments.com/index.php",
     dsg: "CO TITLE SPONSOR",
     src: magic,
   },
