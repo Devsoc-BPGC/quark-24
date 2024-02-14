@@ -14,7 +14,7 @@ import hexo from "../assets/images/hexo.jpeg";
 import taali from "../assets/images/taali.jpeg";
 import unwired from "../assets/sponsors/unwired.png";
 import fpv from "../assets/sponsors/fpv.png";
-
+import magic from "../assets/images/magic.jpg";
 import asus from "../assets/sponsors/asus.png";
 
 import skippi from "../assets/sponsors/skippi.png";
@@ -27,6 +27,12 @@ import instax from "../assets/sponsors/instax.png";
 import { Card, CardContent, HoverText } from "@/components/ui/card";
 
 const sponsor = [
+  {
+    title: "Magic Moments",
+    link: "",
+    dsg: "CO TITLE SPONSOR",
+    src: magic,
+  },
   {
     title: "IMS Goa",
     link: "https://www.imsindia.com",
