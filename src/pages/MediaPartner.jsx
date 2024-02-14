@@ -19,20 +19,20 @@ import TOI from "../assets/images/media/TOI.png";
 import Techstory from "../assets/images/media/Techstory.png";
 import Golden_Goa from "../assets/images/media/Golden_Goa.jpeg";
 import punekar from "../assets/images/media/punekar.png";
-import The_Hindu from "../assets/images/media/The_Hindu.png";
+import The_Hindu from "../assets/images/media/The_Hindu.jpg";
 import ccmag from "../assets/images/media/ccmag.png";
 import { Card, CardContent, HoverText } from "@/components/ui/card";
 
 const arr = [
   {
+    title: "Unstop - Official Hosting Partner",
+    link: "https://unstop.com/",
+    logo: unstop,
+  },
+  {
     title: "Campus Varta",
     link: "https://www.campusvarta.com/",
     logo: CampusVarta,
-  },
-  {
-    title: "Unstop",
-    link: "https://unstop.com/",
-    logo: unstop,
   },
   {
     title: "Campus Times Pune",
@@ -160,7 +160,7 @@ function MediaPartner() {
           {arr.map((arr, index) => {
             return (
               <>
-                <div className="font-azonix text-center mb-6 text-white text-4xl">
+                <div className="font-azonix text-center mb-6 text-white text-3xl">
                   {arr.title}
                 </div>
                 <a href={arr.link} target="_blank">
