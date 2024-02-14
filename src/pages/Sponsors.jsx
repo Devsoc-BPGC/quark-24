@@ -12,6 +12,17 @@ import reclaim from "../assets/images/reclaim.jpg";
 import real from "../assets/images/real.jpg";
 import hexo from "../assets/images/hexo.jpeg";
 import taali from "../assets/images/taali.jpeg";
+import unwired from "../assets/sponsors/unwired.png";
+import fpv from "../assets/sponsors/fpv.png";
+
+import asus from "../assets/sponsors/asus.png";
+
+import skippi from "../assets/sponsors/skippi.png";
+import grad from "../assets/sponsors/grad.png";
+import dlink from "../assets/sponsors/dlink.png";
+
+import hover_logo from "../assets/sponsors/hover_logo.png";
+import instax from "../assets/sponsors/instax.png";
 
 import { Card, CardContent, HoverText } from "@/components/ui/card";
 
@@ -56,41 +67,50 @@ const sponsor = [
     title: "D-Link",
     link: "https://www.dlink.com/in/en",
     dsg: "Official Connectivity Partner",
+    src: dlink,
   },
   {
     title: "Prep For Grad School",
     link: "https://prepforgradschool.com/",
     dsg: "Festive Partner",
+    src: grad,
   },
   {
     title: "Hover Robotix",
     link: "https://hoverrobotix.com/",
     dsg: "Official Powered by Sponsor of Roboficial",
+    src: hover_logo,
   },
   {
     title: "UnwiredConnect",
     link: "https://www.unwiredconnect.in/",
     dsg: "Official Wireless Partner",
+    src: unwired,
+    style: "bg-white",
   },
   {
     title: "Inside FPV",
     link: "https://insidefpv.com/",
     dsg: "Official Drone Prize Partner",
+    src: fpv,
   },
   {
     title: "Instax",
     link: "https://www.instax.in",
     dsg: "Special Moment Partner",
+    src: instax,
   },
   {
     title: "Skippi",
     link: "https://skippi.in/",
     dsg: "Official Ice Popsicle Partner",
+    src: skippi,
   },
   {
     title: "Asus",
     link: "https://www.asus.com/in/",
     dsg: "Official Partner of Matka",
+    src: asus,
   },
   {
     title: "Hexo",
@@ -154,7 +174,7 @@ function Sponsors() {
                         alt={`Image ${index + 1}`}
                         className={`object-contain ${
                           sponsor.title == "Reals" ? "max-h-80 my-auto" : ""
-                        }`}
+                        } ${sponsor.style ? "bg-white p-2" : ""}`}
                       />
                     </CardContent>
                   </Card>
