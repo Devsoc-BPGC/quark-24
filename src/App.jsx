@@ -7,6 +7,7 @@ import Sponsors from "./pages/Sponsors";
 import GuestLectures from "./pages/GuestLectures";
 import Team from "./pages/Team";
 import Workshops from "./pages/Workshops";
+import MediaPartner from "./pages/MediaPartner";
 import {
   Route,
   createBrowserRouter,
@@ -29,6 +30,8 @@ const router = createBrowserRouter(
       <Route path="about" element={<About />} />
       <Route path="workshops" element={<Workshops />} />
       <Route path="exhibitions" element={<Exhibitions />} />
+      <Route path="media" element={<MediaPartner />} />
+
       <Route path="nights" element={<Nights />} />
       <Route path="sponsors" element={<Sponsors />} />
       <Route path="GuestLectures" element={<GuestLectures />} />

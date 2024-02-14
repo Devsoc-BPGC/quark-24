@@ -72,11 +72,11 @@ function TopBar() {
               </span>
             </span>{" "}
           </Link>
-          <Link to="/workshops">
+          <Link to="/media">
             {" "}
             <span className="font-roboInvaders pt-2 text-white inline-block group transition cursor-pointer duration-300 ease-in-out">
               <span className="group-hover:bg-[rgba(77,0,162,0.4)] group-hover:shadow-[0_0_25px_-0px_rgba(77,0,162,1)] rounded-full px-2 py-1">
-                WORKSHOPS
+                MEDIA PARTNERS
               </span>
             </span>{" "}
           </Link>
@@ -174,6 +174,9 @@ function TopBar() {
                   </DropdownMenuItem>
                   <DropdownMenuItem className="flex justify-end text-right">
                     <Link to="/workshops">Workshops</Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem className="flex justify-end text-right">
+                    <Link to="/media">Media Partners</Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem className="flex justify-end text-right">
                     <Link to="/GuestLectures">Guest Lectures</Link>
