@@ -9,39 +9,106 @@ import languify from "../assets/sponsors/languify.jpeg";
 import ims_goa from "../assets/sponsors/ims_goa.jpeg";
 import events_bg from "../assets/images/events_bg.jpg";
 import reclaim from "../assets/images/reclaim.jpg";
+import real from "../assets/images/real.jpg";
+import hexo from "../assets/images/hexo.jpeg";
+import taali from "../assets/images/taali.jpeg";
 
 import { Card, CardContent, HoverText } from "@/components/ui/card";
 
-let sponsor = [
+const sponsor = [
   {
-    name: "sda_bocconi",
-    src: sda_bocconi,
-    title: "Associate Sponsor of Corporate",
-  },
-  {
-    name: "nomura",
-    src: nomura,
-    title: "Co-Title",
-  },
-  {
-    name: "learners cortex",
-    src: learners_cortex,
-    title: "Official Learning Partner",
-  },
-  {
-    name: "languify",
-    src: languify,
-    title: "Assessment Partner",
-  },
-  {
-    name: "ims goa",
+    title: "IMS Goa",
+    link: "https://www.imsindia.com",
+    dsg: "Exam Prep Partner",
     src: ims_goa,
-    title: "Exam Prep Partner",
   },
   {
-    name: "brain wonders",
+    title: "Languify",
+    link: "https://languify.in",
+    dsg: "Assessment Partner",
+    src: languify,
+  },
+  {
+    title: "Brainwonders",
+    link: "https://www.brainwonders.in",
+    dsg: "Official Powered by Sponsor of Qriosity",
     src: brain_wonders,
-    title: "Official Powered by Sponsor of Qriosity",
+  },
+  {
+    title: "Learners Cortex",
+    link: "https://learnerscortex.com",
+    dsg: "Official Learning Partner",
+    src: learners_cortex,
+  },
+  {
+    title: "SDA Bocconi",
+    link: "https://www.sdabocconi.it/en/home",
+    dsg: "Associate Sponsor of Corporate",
+    src: sda_bocconi,
+  },
+  {
+    title: "Nomura Services India Private Limited",
+    link: "https://www.nomura.com/",
+    dsg: "Co-Title",
+    src: nomura,
+  },
+  {
+    title: "D-Link",
+    link: "https://www.dlink.com/in/en",
+    dsg: "Official Connectivity Partner",
+  },
+  {
+    title: "Prep For Grad School",
+    link: "https://prepforgradschool.com/",
+    dsg: "Festive Partner",
+  },
+  {
+    title: "Hover Robotix",
+    link: "https://hoverrobotix.com/",
+    dsg: "Official Powered by Sponsor of Roboficial",
+  },
+  {
+    title: "UnwiredConnect",
+    link: "https://www.unwiredconnect.in/",
+    dsg: "Official Wireless Partner",
+  },
+  {
+    title: "Inside FPV",
+    link: "https://insidefpv.com/",
+    dsg: "Official Drone Prize Partner",
+  },
+  {
+    title: "Instax",
+    link: "https://www.instax.in",
+    dsg: "Special Moment Partner",
+  },
+  {
+    title: "Skippi",
+    link: "https://skippi.in/",
+    dsg: "Official Ice Popsicle Partner",
+  },
+  {
+    title: "Asus",
+    link: "https://www.asus.com/in/",
+    dsg: "Official Partner of Matka",
+  },
+  {
+    title: "Hexo",
+    link: "",
+    dsg: "Official Al Partner",
+    src: hexo,
+  },
+  {
+    title: "Taali",
+    link: "https://taalifoods.in/",
+    dsg: "Festival Partner",
+    src: taali,
+  },
+  {
+    title: "Reals",
+    link: "",
+    dsg: "Hydration Partner",
+    src: real,
   },
 ];
 
@@ -71,23 +138,27 @@ function Sponsors() {
         }}
       >
         <div className="lg:mx-[auto] justify-center z-10 flex max-w-[100vw] lg:max-w-[50vw] flex-col">
-          {sponsor.map((sponsorItem, index) => {
+          {sponsor.map((sponsor, index) => {
             return (
               <>
-                <div className="font-azonix text-center mb-6 text-white text-2xl">
-                  {sponsorItem.title}
-                </div>
-                <Card
-                  className={`lg:h-96 lg:w-96 w-[80vw] h-[80vw] flex mb-24 justify-center mx-[auto]`}
-                >
-                  <CardContent className="flex object-cover  items-center justify-center">
-                    <img
-                      src={sponsorItem.src}
-                      alt={`Image ${index + 1}`}
-                      className=" object-cover "
-                    />
-                  </CardContent>
-                </Card>
+                <a href={sponsor.link} target="_blank">
+                  <div className="font-azonix text-center mb-6 text-white text-2xl">
+                    {sponsor.dsg}
+                  </div>
+                  <Card
+                    className={`lg:h-96 lg:w-96 w-[80vw] h-[80vw] flex mb-24 justify-center mx-[auto]`}
+                  >
+                    <CardContent className="flex object-contain items-center justify-center">
+                      <img
+                        src={sponsor.src}
+                        alt={`Image ${index + 1}`}
+                        className={`object-contain ${
+                          sponsor.title == "Reals" ? "max-h-80 my-auto" : ""
+                        }`}
+                      />
+                    </CardContent>
+                  </Card>
+                </a>
               </>
             );
           })}
