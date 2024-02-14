@@ -50,18 +50,18 @@ const arr = [
     logo: Goa_365,
   },
   {
-    title: "IndiaCollegeFest",
+    title: "India College Fest",
     link: "https://indiacollegefest.com/",
     logo: indian_college_fest,
   },
   {
-    title: "Insightone",
+    title: "Insight One",
     link: "https://insightone.se/en/",
     logo: InsightOne,
     style: "bg-white",
   },
   {
-    title: "OhCampus",
+    title: "Oh Campus",
     link: "https://ohcampus.com/",
     logo: OhCampus,
   },
