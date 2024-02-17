@@ -23,6 +23,7 @@ import dlink from "../assets/sponsors/dlink.png";
 
 import hover_logo from "../assets/sponsors/hover_logo.png";
 import instax from "../assets/sponsors/instax.png";
+import pspace from "../assets/sponsors/pspace.jpeg";
 
 import { Card, CardContent, HoverText } from "@/components/ui/card";
 
@@ -135,6 +136,12 @@ const sponsor = [
     link: "",
     dsg: "Hydration Partner",
     src: real,
+  },
+  {
+    title: "Product Space",
+    link: "",
+    dsg: "Title Sponsor of Fix the Product",
+    src: pspace,
   },
 ];
 
